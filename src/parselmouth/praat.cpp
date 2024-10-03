@@ -407,9 +407,10 @@ auto runPraatScriptFromFile(const std::vector<std::reference_wrapper<structData>
 	auto keepCwd = extractKwarg<bool, py::bool_>(kwargs, "keep_cwd", false, "bool");
 
 	// Praat treats filenames inside scripts as relative to the script, so we'll do the same
-	auto dir = std::make_optional<autoMelderFileSetDefaultDir>(&file);
+	auto dir = std::make_optional<autoMelderFileSetCurrentFolder>(&file);
 	Melder_includeIncludeFiles(&script);
 
+	// If we keep the current working dir, destruct the RAII object here, after resolving includes but before actually running the script
 	if (keepCwd)
 		dir = std::nullopt;
 
