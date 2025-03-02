@@ -155,6 +155,14 @@ else:
     except TypeError:
         branch_or_commit = str(git_head.commit)
 
+<<<<<<< HEAD
+=======
+linkcheck_ignore = [
+    'https://www.sciencedirect.com/science/article/abs/pii/S0095447017301389',  # sciencedirect.com (Elsevier), 403 Client Error: Forbidden for url
+    'http://www.praat.org', # No clue what's going on with the Praat website, but it's something with cookies in a 302 HTTP response and retrying with cookies
+]
+
+>>>>>>> 395f68a6058ca131d24dda1450c4d4f5117d1505
 rst_epilog = """
 .. |binder_badge_examples| image:: https://mybinder.org/badge_logo.svg
     :target: https://mybinder.org/v2/gh/YannickJadoul/Parselmouth/{binder_ref}?urlpath=lab/tree/docs/examples
