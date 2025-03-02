@@ -50,6 +50,11 @@ PRAAT_CLASS_BINDING(Formant) {
 	def("get_bandwidth_at_time",
 	    args_cast<_, Positive<_>, _, _>(Formant_getBandwidthAtTime),
 	    "formant_number"_a, "time"_a, "unit"_a = kFormant_unit::HERTZ);
+
+	def("get_number_of_frames", [](Formant self) { return self->frames.size; });
+
+	def("getframe", [](Formant self, integer iFrame) { return self->frames[iFrame]; });
+
 }
 
 } // namespace parselmouth
