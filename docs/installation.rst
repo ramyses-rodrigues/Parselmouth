@@ -25,13 +25,13 @@ Python distributions
 --------------------
 
 Anaconda
-    If you use the Anaconda distribution of Python, you can use the same ``pip`` command in a terminal of the appropriate Anaconda environment, either activated through the `Anaconda Navigator <https://docs.continuum.io/free/navigator/tutorials/manage-environments/#using-an-environment>`_ or `conda tool <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment>`_.
+    If you use the Anaconda distribution of Python, you can use the same ``pip`` command in a terminal of the appropriate Anaconda environment, either activated through the `Anaconda Navigator <https://www.anaconda.com/docs/tools/anaconda-navigator/tutorials/manage-environments#using-an-environment>`_ or `conda tool <https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment>`_.
 
 Homebrew & MacPorts
     We currently do not have Homebrew or MacPorts packages to install Parselmouth. Normally, Parselmouth can just be installed with the accompanying ``pip`` of these distributions.
 
 PyPy
-    Binary wheels for recent versions of `PyPy <https://www.pypy.org/>` are available on the Python Package Index (PyPI), and can be installed with ``pip``.
+    Binary wheels for recent versions of `PyPy <https://www.pypy.org/>`_ are available on the Python Package Index (PyPI), and can be installed with ``pip``.
 
 Other
     For other distributions of Python, we are expecting that our package is compatible with the Python versions that are out there and that ``pip`` can handle the installation. If you are using yet another Python distribution, we are definitely interested in hearing about it, so that we can add it to this list!

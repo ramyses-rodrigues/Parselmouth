@@ -159,7 +159,6 @@ else:
 =======
 linkcheck_ignore = [
     'https://www.sciencedirect.com/science/article/abs/pii/S0095447017301389',  # sciencedirect.com (Elsevier), 403 Client Error: Forbidden for url
-    'http://www.praat.org', # No clue what's going on with the Praat website, but it's something with cookies in a 302 HTTP response and retrying with cookies
 ]
 
 >>>>>>> 395f68a6058ca131d24dda1450c4d4f5117d1505
@@ -169,7 +168,7 @@ rst_epilog = """
 """.format(binder_ref=branch_or_commit)
 
 nbsphinx_prolog = """
-{{% set docname = 'docs/' + env.doc2path(env.docname, base=False) %}}
+{{% set docname = 'docs/' ~ env.doc2path(env.docname, base=False) %}}
 
 .. only:: html
 
