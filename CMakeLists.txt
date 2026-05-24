@@ -43,7 +43,7 @@ if (PREBUILT_DEPENDENCIES)
 else ()
 	add_subdirectory(extern)
 	add_subdirectory(praat)
-	export(TARGETS praat fmt FILE dependency_exports.cmake)
+	# export(TARGETS praat fmt FILE dependency_exports.cmake)
 endif ()
 
 # Currently, scikit-build does not support FindPython.
