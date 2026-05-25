@@ -93,6 +93,6 @@ endforeach()
 target_include_directories(praat INTERFACE ${PRAAT_INCLUDE_DIRS})
 target_compile_definitions(praat PUBLIC ${PRAAT_DEFINITIONS} PRIVATE ${PRAAT_DEFINITIONS_PRIVATE})
 target_compile_options(praat PUBLIC ${PRAAT_FLAGS} PRIVATE ${PRAAT_FLAGS_PRIVATE})
-target_link_libraries(praat PUBLIC fmt::fmt)
+# target_link_libraries(praat PUBLIC fmt::fmt)
 
 set_target_properties(praat PROPERTIES C_STANDARD 99 CXX_STANDARD 17 CXX_STANDARD_REQUIRED TRUE)
